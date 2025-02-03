@@ -1,0 +1,38 @@
+{
+  "name": "sarahah_app",
+  "version": "1.0.0",
+  "author": "Mohamed Saad",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon --exec ts-node ./src/server.ts",
+    "start:prod": "cross-env NODE_ENV=production npx ts-node ./src/server.ts"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.10.0",
+    "uuid": "^11.0.5",
+    "validator": "^13.12.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/crypto-js": "^4.2.2",
+    "@types/express": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.8",
+    "@types/mongoose": "^5.11.96",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.12.0",
+    "@types/nodemailer": "^6.4.17",
+    "@types/validator": "^13.12.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
