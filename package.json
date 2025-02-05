@@ -3,18 +3,22 @@
   "version": "1.0.0",
   "author": "Mohamed Saad",
   "description": "",
-  "main": "app.js",
+  "main": "app.ts",
   "scripts": {
+    "build": "npm i",
     "start": "nodemon --exec ts-node ./src/server.ts",
     "start:prod": "cross-env NODE_ENV=production npx ts-node ./src/server.ts"
   },
-  "keywords": [],
+  "engines": {
+    "node": "22.12.0"
+  },
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",
     "crypto-js": "^4.2.0",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "joi": "^17.13.3",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.9.5",
     "morgan": "^1.10.0",
